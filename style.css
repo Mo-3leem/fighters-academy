@@ -1,0 +1,141 @@
+:root {
+  --bg: #0f0d13;
+  --text: #fdfcfe;
+  --muted: #a9a6aa;
+  --border: #a9a6aa;
+  --radius-btn: 10px;
+  --font-main: "IBM Plex Sans Arabic", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* main containers */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 0 35px;
+}
+
+/* profile pectuers */
+.profile-pic {
+  border-radius: 50%;
+  width: 180px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* map */
+.page-title h1 {
+  color: var(--text);
+  font-size: 1.9rem;
+  margin-bottom: -6px;
+  margin-top: 12px;
+}
+
+.page-description p {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+/* Buttons */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.button-main {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 18px;
+  padding: 13px 0;
+  color: #fff;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  border-radius: var(--radius-btn);
+  background: transparent;
+  position: relative;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.button-main:hover {
+  background-color: #29282d;
+  transform: translateY(-1px);
+}
+
+.icon-container {
+  position: absolute;
+  top: 50%;
+  right: 33px;
+  transform: translateY(-50%);
+}
+
+.icon-container i {
+  font-size: 1.5rem;
+}
+
+.overflow-wrap {
+  padding: 0 45px;
+  letter-spacing: 1px;
+}
+
+/* --- Gallery Swiper --- */
+.gallery-swiper {
+  width: 100%;
+  max-width: 520px;
+  margin: 10px auto 20px;
+  padding-bottom: 26px;
+}
+
+.gallery-swiper .swiper-slide {
+  height: 260px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #000;
+}
+
+.gallery-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-swiper .swiper-pagination-bullet {
+  background: #444;
+  opacity: 1;
+}
+
+.gallery-swiper .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+@media (max-width: 600px) {
+  .profile-pic {
+    max-width: 170px;
+  }
+
+  .gallery-swiper .swiper-slide {
+    height: 220px;
+  }
+}

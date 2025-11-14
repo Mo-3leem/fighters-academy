@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FIGHTERS ACADEMY | Fighters Academy & Ladies’ Gym</title>
+    <meta name="description" content="اكاديمية فنون قتالية و جيم سيدات" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- خط عربي -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="./photos/logo.png" alt="Fighters Academy" class="profile-pic" />
+
+      <div class="page-title">
+        <h1>FIGHTERS ACADEMY</h1>
+      </div>
+
+      <div class="page-description">
+        <p>اكاديمية فنون قتالية و جيم سيدات</p>
+      </div>
+
+      <ul id="buttons-list"></ul>
+
+      <section class="section">
+        <h2 class="section-title">تجهيزات المكان</h2>
+
+        <div class="swiper gallery-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./photos/Place_equipment/academy1.jpg" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./photos/Place_equipment/front.jpg" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./photos/Place_equipment/gym1.jpg" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./photos/Place_equipment/gym2.jpg" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./photos/Place_equipment/gym3.jpg" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./photos/Place_equipment/gym4.jpg" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./photos/Place_equipment/gym5.jpg" />
+            </div>
+          </div>
+
+          <!-- النقاط -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="section text-section">
+        <p>🏋️‍♀️ <strong>Fighters Academy & Ladies’ Gym</strong></p>
+        <p>🥊 أكاديمية متخصصة في الفنون القتالية للأطفال والكبار.</p>
+        <p>💪 جيم سيدات مجهز بأجهزة تمارين متنوعة.</p>
+        <p>⏰ مواعيد العمل: من 10 صباحًا إلى 10 مساءً.</p>
+        <p>
+          📍 القاهرة – النزهة الجديدة – شارع 27 – برج الباسم – بجوار عيادات
+          الكاروز.
+        </p>
+
+        <p style="white-space: pre-line; margin-top: 10px">
+          للتواصل 📞 01556006932 - 01055519585
+        </p>
+      </section>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const gallerySwiper = new Swiper(".gallery-swiper", {
+        slidesPerView: 1.1,
+        spaceBetween: 12,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: ".gallery-swiper .swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+          900: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+
+    <script src="links.js"></script>
+  </body>
+</html>
