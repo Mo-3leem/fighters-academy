@@ -1,5 +1,10 @@
 const links = [
   {
+    label: "للتسجيل والاستفاده بالعروض",
+    iconClass: "fa fa-user",
+    url: "https://forms.gle/bBhyt83NFXLquiru6",
+  },
+  {
     label: "فيسبوك",
     iconClass: "fab fa-facebook-f",
     url: "https://www.facebook.com/profile.php?id=61582477494871",
