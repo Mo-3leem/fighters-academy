@@ -17,7 +17,7 @@ const links = [
   {
     label: "العنوان",
     iconClass: "fas fa-map-marker-alt",
-    url: "https://maps.app.goo.gl/3a5miJD9HZdBL4S7A?g_st=iw",
+    url: "https://maps.app.goo.gl/MqESw2dmrzi75jtk6",
   },
 ];
 
